@@ -50,7 +50,12 @@ class MyClass {
 
 class Person(val name: String) {
     val children: MutableList<Person> = mutableListOf()
-    constructor(name: String, parent: Person) : this(name) {
+    constructor(name: String, parent: Person)
+       /*allows the constructor to reuse
+       * initialization logic from another constructor
+       * in the class*/ : this(name) {
+           //this -> refers to the current instance
+           //of the class itself
         parent.children.add(this)//add children to parent as person class
     }
 

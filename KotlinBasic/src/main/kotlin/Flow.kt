@@ -9,7 +9,7 @@ fun compareToWhen(option: Int) {
     }
     println(result)
 }
-fun main(args: Array<String>) {
+fun main() {
    fun compare(num: Int) {
        val result = if (num > 5) {
            "Greater than 5"
@@ -32,6 +32,8 @@ fun main(args: Array<String>) {
     //step - specifies the value of increment or decrement
     println("downTo and step")
     for(i in 10 downTo 1 step 2) {
+        //here, although we have a step with positive 2, we are going
+        //down to 1; therefore, it is decrementing from 10
         println(i)
     }
 

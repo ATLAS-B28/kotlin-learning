@@ -11,7 +11,10 @@ repositories {
 
 dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
+    implementation("org.jetbrains.kotlin:kotlin-serialization:1.6.21")
+        implementation("com.google.code.gson:gson:2.8.9")
 }
+
 
 tasks.test {
     useJUnitPlatform()
